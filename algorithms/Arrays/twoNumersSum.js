@@ -1,19 +1,19 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function (nums, target) {
 
-let numArray = [1, 2, 3, 4, 5, 6, 7, 8]
-
-function twoSum(numbers) {
-    const sets = [];
-
-    for (let i = 0; i < numbers.length - 1; i++) {
-        for (let j = i + 1; j < numbers.length; j++) {
-            const a = numbers[i];
-            const b = numbers[j];
-            if (a + b === 10) {
-                sets.push(`${a} + ${b}`);
+    for (let i = 0; i < nums.length - 1; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) {
+                return [i, j]
             }
         }
     }
-    return sets;
-}
 
-console.log(twoSum(numArray));
+
+};
+
+twoSum([2, 7, 11, 15], 9);
