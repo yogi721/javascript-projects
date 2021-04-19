@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  font-size: 50px;
+  color: #bbb;
 }
 
 .cursor {
@@ -12,12 +14,12 @@ body {
 
 #typing {
   margin: 0 auto;
-  width: 300px;
+  width: 800px;
 }
 
 #stats {
   margin: 0 auto;
-  width: 300;
+  width: 500;
 }
 
 .hidden {

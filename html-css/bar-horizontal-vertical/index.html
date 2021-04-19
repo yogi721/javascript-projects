@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="horizontal.css" />
+    <link id="cssfile" rel="stylesheet" href="horizontal.css" />
 
     <title>Bar V&H</title>
   </head>
@@ -21,5 +21,25 @@
       <a href="#"> <i class="fa fa-globe"></i> </a>
       <a href="#"> <i class="fa fa-trash"></i> </a>
     </div>
+
+    <p>Click the button to switch style</p>
+    <button onclick="setStyle()">Click Me</button>
+
+    <script>
+      function setStyle() {
+        if (
+          document.getElementById('cssfile').getAttribute('href') ==
+          'horizontal.css'
+        ) {
+          document
+            .getElementById('cssfile')
+            .setAttribute('href', 'vertical.css');
+        } else {
+          document
+            .getElementById('cssfile')
+            .setAttribute('href', 'horizontal.css');
+        }
+      }
+    </script>
   </body>
 </html>
