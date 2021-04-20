@@ -1,25 +1,41 @@
 body {
   text-align: center;
-  font-size: 50px;
-  color: #bbb;
+  -webkit-font-smoothing: auto;
+  box-sizing: initial;
+  letter-spacing: normal;
+  line-height: normal;
 }
 
 .cursor {
-  background-color: aqua;
+  border-bottom: 4px solid rgb(17, 0, 255);
+  /* background-color: aqua; */
+  font-size: 50px;
+  color: black;
+  width: 21px;
+  height: 46px;
+  /* margin-top: -2px; */
+  /* margin-left: 196px; */
 }
 
 .done {
-  color: #bbb;
+  color: #0e630e;
+}
+.wrong {
+  color: rgb(226, 78, 9);
 }
 
 #typing {
   margin: 0 auto;
   width: 800px;
+  font-size: 50px;
+  color: #bbb;
 }
 
 #stats {
   margin: 0 auto;
   width: 500;
+  font-size: 50px;
+  color: rgb(67, 81, 143);
 }
 
 .hidden {

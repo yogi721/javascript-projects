@@ -30,7 +30,7 @@ const startGame = () => {
         }
 
         if (key === cursorCharacter.innerText) {
-            cursorCharacter.classList.remove("cursur");
+            cursorCharacter.classList.remove("cursor");
             cursorCharacter.classList.add("done");
             cursorCharacter = characters[++cursorIndex];
         }
