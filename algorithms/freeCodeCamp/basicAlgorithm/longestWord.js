@@ -21,7 +21,7 @@
 //     }, 0)
 // }
 
-// Solution 3
+// Solution 3 
 
 function longestWord(str) {
 
@@ -38,3 +38,5 @@ function longestWord(str) {
         return longestWord(str.slice(1, str.length).join(" "));
     }
 }
+
+// To be continued
