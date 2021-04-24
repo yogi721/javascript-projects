@@ -1,0 +1,21 @@
+@mixin border-stroke($val) {
+  @if $val == light {
+    border: 1px solid coral;
+  } @else if $val == medium {
+    border: 3px solid coral;
+  } @else if $val == heavy {
+    border: 6px solid coral;
+  } @else if $val == round {
+    border-radius: 50px 50px 50px 50px;
+    border: 2px solid black;
+  } @else {
+    border: none;
+  }
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background: rgb(27, 174, 219);
+  @include border-stroke(round);
+}

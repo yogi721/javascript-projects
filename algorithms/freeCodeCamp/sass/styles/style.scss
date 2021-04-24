@@ -1,5 +1,6 @@
 @import './variables';
 @import './header';
+@import './loop';
 
 .contact {
   @include flexCenter(column, $backgroundContent);
@@ -9,3 +10,4 @@
 
 // The footer styles defined in _footer.scss file
 @import './footer';
+@import './condition';
