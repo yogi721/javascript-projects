@@ -41,5 +41,10 @@ header button:hover, footer button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   background: rgba(186, 236, 179, 0.89);
+  width: 80%;
+}
+
+footer {
+  background: #ffab8c;
 }
 /*# sourceMappingURL=style.css.map */

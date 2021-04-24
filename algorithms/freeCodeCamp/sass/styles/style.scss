@@ -3,6 +3,8 @@
 
 .contact {
   @include flexCenter(column, $backgroundContent);
+  //   Calculation
+  width: -20% + 100%;
 }
 
 // The footer styles defined in _footer.scss file

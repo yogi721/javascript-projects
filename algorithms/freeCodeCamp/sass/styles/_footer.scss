@@ -1,3 +1,7 @@
 footer {
+  // inherite styles from _header.scss file
   @extend header;
+
+  //   Here we overide the background color
+  background: rgb(255, 171, 140);
 }
