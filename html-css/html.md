@@ -12,6 +12,8 @@
 
     title="I'm a tool tip"
     style="color:red;"
+    class
+    id
 
 # formatting
 
@@ -36,8 +38,9 @@
 
 # Division
 
-    div
-    span
+    div     - block
+    span    - inline
+            - read : https://www.w3schools.com/html/html_blocks.asp
 
 # Heading
 
@@ -47,45 +50,106 @@
 
     p
 
-# HTML5
+# HTML Semantic Elements
 
     main
     header
-    footer
     nav
-    video
-    audio (control)
-        source (src="file.mp3" type="audio/mpeg")
-    article
     section
+    article
+    aside
+    footer
+    detail
+    summary
+    mark
     fugure
         figcaption
+    time
+
+# HTML Multimedia
+
+    video (controls, autoplay)
+    audio (control)
+        source (src="file.mp3" type="audio/mpeg")
 
 # image
 
-    img (src, alt)
+    img
+        src
+        alt
+        <map name="workmap">
+            <area shape="rect | circle | poly | default" coords="" alt="">
+            read map : https://www.w3schools.com/html/html_images_imagemap.asp
+    picture
+        source
 
 # link (Anchor)
 
     a
-        href
+        href (url | mailto:someone@example.com)
         target (_self | _blank | _parent | _top)
+        title
         alt
+
+# table
+
+    table
+        caption
+        tr          - row
+            th      - head
+        tr
+            td      - data/cell
+
+        colgroup
+        col
+        thead
+        tbody
+        tfoot
 
 # list
 
-    ul li
-    ol li
+    ul
+        li
+    ol
+        li
+    dl
+        dt
+        dd
 
 # Forms
 
-    form   (action)
+    form   (action. target,autocomplete="on", method=[post | get], novalidate, enctype, rel, accept-charset)
     label  (for="the name of the input element)
-    input  (type [text | radio | checkbox | submit])
-            (placeholder)
-            (name)
-            (value)
-            (required)
-            (checked)
+    input
+        (type= [ text | radio | checkbox | submit | button | color | date
+                | datetime-local | email | file | hidden | image | month
+                | number | password | range | reset | search | tel | time
+                |  url | week
+            ])
+
+        (placeholder)
+        (name)      - each input field must have a name attr to be submitted.
+        (value)
+        (required)
+        (checked)
+        (readonly)
+        (disabled)
+        (size)
+        (maxlength)
+        (max)
+        (min)
+        (multiple) - file
+        (pattern)  - "[A-Za-z]{3}"
+        (step)
+        (autofocus)
 
     button  (type [submit | reset])
+    select (name="" multiple)
+        option (value="", selected)
+    textarea
+    fieldset
+    legend
+    datalist
+        option ( value="")
+    output
+    optgroup
