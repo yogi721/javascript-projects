@@ -1,0 +1,28 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c0138), to(#2c0055));
+  background: linear-gradient(180deg, #1c0138 0%, #2c0055 100%);
+}
+
+body span {
+  color: yellow;
+  font-size: 40px;
+}
+
+body span .chronotime {
+  -webkit-box-shadow: 0px 0px 16px;
+          box-shadow: 0px 0px 16px;
+}
+
+body form input {
+  width: 171px;
+  height: 65px;
+  background: #2c0055;
+  -webkit-box-shadow: 0px 0px 36px;
+          box-shadow: 0px 0px 36px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: relative;
+  color: yellow;
+  font-size: 30px;
+}
+/*# sourceMappingURL=styles.css.map */
