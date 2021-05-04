@@ -18,5 +18,10 @@ form.addEventListener('submit', e => {
 
     result.classList.remove('d-none')
     result.querySelector('span').textContent = `${score}%`
+    scrollTo(0, 0) // same as window.scrollto()
 
 })
+
+
+// window object (global object)
+// console.log('Hello')     console is under global object the as writing window.console.log()
