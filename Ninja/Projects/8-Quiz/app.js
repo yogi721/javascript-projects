@@ -16,10 +16,19 @@ form.addEventListener('submit', e => {
     })
 
 
-    result.classList.remove('d-none')
-    result.querySelector('span').textContent = `${score}%`
     scrollTo(0, 0) // same as window.scrollto()
+    result.classList.remove('d-none')
 
+    // Animate the score
+    let output = 0
+    const timer = setInterval(() => {
+        result.querySelector('span').textContent = `${output}%`
+        if (output === score) {
+            clearInterval(timer)
+        } else {
+            output++
+        }
+    }, 20)
 })
 
 
